@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 
 class Screen1 extends StatefulWidget {
@@ -23,15 +21,25 @@ class _Screen1State extends State<Screen1> {
         ],
         backgroundColor: Colors.orange,
       ),
-      body: Center(
-        child: Container(
+      body: GridView.builder(
+        itemCount: 30,
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 4,
+          childAspectRatio: 3 / 4,
+        ),
+        itemBuilder: (BuildContext context, int index) {
+          return Container(
+            margin: const EdgeInsets.all(20),
             height: 300,
-            width: 400,
             color: Colors.red,
-            child: Image.network(
-              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYpnMGNxudHbYNrdMaIFXR81Z23m_bFojOAA&usqp=CAU",
-              fit: BoxFit.cover,
-            )),
+            child: Center(
+              child: Text(
+                "$index",
+                style: TextStyle(fontSize: 30, color: Colors.white),
+              ),
+            ),
+          );
+        },
       ),
     );
   }

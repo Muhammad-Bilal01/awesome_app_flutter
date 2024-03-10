@@ -47,3 +47,23 @@ give icons on the app
 Most used widget in flutter.
 
 ## Images
+
+## Row
+
+## Column
+
+## Stack
+
+## SigleChildScrollView
+
+## List View and List View Builder
+
+- shrinkWrap: jitni required he srf utni space lo complete parent ki space nhi lo
+
+- phyics: behavior of scrolling
+
+- scrollDirection: horizonatal [in horizonatal parent component height is required] /vertical
+
+## GridView & GridView Builder
+
+## Statelesee Class or Statefull Class / Widget
