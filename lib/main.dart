@@ -1,5 +1,6 @@
 import 'package:awesome_app/Screen1.dart';
 import 'package:awesome_app/project1/project1.dart';
+import 'package:awesome_app/project1/project2.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Project1(),
+      home: Project2(),
     );
   }
 }
